@@ -1,4 +1,5 @@
 // require the native file system of node
+require('dotenv').config();
 const fs = require('fs');
 // Require the necessary discord.js classes
 const { Client,Collection, Intents, MessageActionRow, MessageButton } = require('discord.js');
