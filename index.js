@@ -3,8 +3,7 @@ require('dotenv').config();
 const fs = require('fs');
 // Require the necessary discord.js classes
 const { Client,Collection, Intents, MessageActionRow, MessageButton } = require('discord.js');
-//const { token } = require('./config.json');
-//const token  = process.env.token;
+//const { token } = require('./config.json'); 
 const key = process.env.api_key;
 
 // Create a new client instance
