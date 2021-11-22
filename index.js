@@ -2,7 +2,8 @@
 const fs = require('fs');
 // Require the necessary discord.js classes
 const { Client,Collection, Intents, MessageActionRow, MessageButton } = require('discord.js');
-const { token } = require('./config.json');
+//const { token } = require('./config.json');
+const token  = process.env.token;
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
