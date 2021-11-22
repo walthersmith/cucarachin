@@ -5,6 +5,7 @@ const fs = require('fs');
 const { Client,Collection, Intents, MessageActionRow, MessageButton } = require('discord.js');
 //const { token } = require('./config.json');
 //const token  = process.env.token;
+const key = process.env.api_key;
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
@@ -48,5 +49,5 @@ client.on('interactionCreate', async interaction => {
 });
 
 // Login to Discord with your client's token
-console.log(process.env.TOKEN);
-client.login( process.env.TOKEN);
+console.log(key);
+client.login(key);
